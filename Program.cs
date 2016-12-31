@@ -7,7 +7,7 @@ namespace presentacion6
 { 
   class Program
   { 
-      static void Main(string() args)
+      static void Main(string[] args)
       {
       ClientesVentas Cliente;
       Cliente.IdCliente = 123;
@@ -17,11 +17,16 @@ namespace presentacion6
       Cliente.Direccion="HEM";
       Cliente.Colonia="la fe de C";
       Cliente.Municipio="Chepqew";
+      Console.EsCredito = true;  
       Console.WriteLine(Cliente.Apellidos + " " + Cliente.Nombres);
       Console.WriteLine(Cliente.Direccion + " " + Cliente.Colonia+" "+ ClienteMunicipio);
       Console.WriteLine(Cliente.RFC);
+        
       if (Cliente.EsCredito)
-      
+          Console.WriteLine("El Cliente tiene Credito ");
+       else
+          Console.WriteLine("El Cliente no tiene Credito ");
+       Console.ReadKey();
       }
   }
   
