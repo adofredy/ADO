@@ -31,6 +31,11 @@ namespace presentacion1
         get {return Municipio;}
         set {_Municipio = value;}
       }
+      public bool EsCredito
+      {
+        get {return _EsCredito;}
+        set {_EsCredito = value;}
+      }
     
     }
   
